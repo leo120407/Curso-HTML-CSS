@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>tente abrir esse site em varios tamanhos diferentes</p>
+    <picture>
+        <source media="(max-width: 500px)" srcset="imagens/P.png" type="image/png"> <!-- respeitar a ordem de tamanho -->
+        <source media="(max-width: 1000px)" srcset="imagens/M.png" type="image/png">
+        <img src="imagens/G.png" alt="Foto grande">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>audios em HTML5</p>
+    <audio src="media/happy-mistake.mp3" controls preload="metadata"></audio>
+    <!--MP3 WAV OGG-->
+    <p>outro modelo</p>
+    <audio preload="metadata" controls loop>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+        <source src="media/guanacast-33.wav" type="audio/wav">
+        <source src="media/guanacast-33.ogg" type="audio/ogg">
+        <p>infelizmente não foi possível reproduzir o audio baixe <a href="media/guanacast-33.mp3">aqui</a></p>
+    </audio>
+</body>
+</html>
